@@ -1,6 +1,6 @@
 # OpenAC Example App
 
-Sample iOS app that runs the **OpenAC** zero-knowledge pipeline for Taiwan's MOICA digital identity: authenticate with the MOICA app, generate ZK proofs for the cert chain (RS4096) and device signature (RS2048) circuits, then submit them to a server for link verification. It uses **[OpenACSwift](https://github.com/zkmopro/OpenACSwift)**—Swift bindings for OpenAC on iOS.
+Sample iOS app that runs the **OpenAC** zero-knowledge pipeline for Taiwan's MOICA digital identity: authenticate with the MOICA app, generate ZK proofs for the cert chain (RS4096) and user signature (RS2048) circuits, then submit them to a server for link verification. It uses **[OpenACSwift](https://github.com/zkmopro/OpenACSwift)**—Swift bindings for OpenAC on iOS.
 
 ## Demo
 
@@ -20,7 +20,7 @@ Downloads three files from cloud storage (shown only when not yet present):
 | File | Source | Size |
 |---|---|---|
 | `cert_chain_rs4096_proving.key` | zkID releases (gz) | ~large |
-| `device_sig_rs2048_proving.key` | zkID releases (gz) | ~large |
+| `user_sig_rs2048_proving.key` | zkID releases (gz) | ~large |
 | `g3-tree-snapshot.json.gz` | moica-revocation-smt releases | — |
 
 
@@ -39,7 +39,7 @@ Downloads three files from cloud storage (shown only when not yet present):
 
 | Step | Description |
 |---|---|
-| **Generate Proof** | Runs `proveCertChainRs4096` and `proveDeviceSigRs2048` (Groth16 provers). Reports time in ms. |
+| **Generate Proof** | Runs `proveCertChainRs4096` and `proveUserSigRs2048` (Groth16 provers). Reports time in ms. |
 | **Verify** | Submits proofs to `POST /link-verify` with the challenge ID, cert chain type (`rs4096`). |
 
 Individual steps can be triggered with their own play button, or tap **Run All Steps** in the toolbar to run prove + verify in sequence.
@@ -50,7 +50,7 @@ Individual steps can be triggered with their own play button, or tap **Run All S
 {
   "cert_chain_type": "rs4096",
   "cert_chain_proof": "<base64-encoded bytes>",
-  "device_sig_proof": "<base64-encoded bytes>",
+  "user_sig_proof": "<base64-encoded bytes>",
 }
 ```
 
@@ -63,7 +63,7 @@ Individual steps can be triggered with their own play button, or tap **Run All S
 
 ## Dependencies
 
-- [OpenACSwift](https://github.com/zkmopro/OpenACSwift) — Swift bindings for `proveCertChainRs4096`, `proveDeviceSigRs2048`, `verifyCertChainRs4096`, `verifyDeviceSigRs2048`, `generateCertChainRs4096Input`, `linkVerify`
+- [OpenACSwift](https://github.com/zkmopro/OpenACSwift) — Swift bindings for `proveCertChainRs4096`, `proveUserSigRs2048`, `verifyCertChainRs4096`, `verifyUserSigRs2048`, `generateCertChainRs4096Input`, `linkVerify`
 - CryptoKit (system) — AES-256-GCM for the sp_checksum required by the TW FidO API
 - zlib (system) — decompresses `.gz` key files on-device
 
