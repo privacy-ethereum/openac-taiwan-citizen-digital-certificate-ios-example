@@ -11,13 +11,13 @@ import zlib
 
 private let certChainProvingKeyURL = URL(
   string:
-    "https://github.com/zkmopro/zkID/releases/download/latest/cert_chain_rs4096_proving.key.gz")!
+    "https://github.com/privacy-ethereum/zkID/releases/download/RSA-X.509-Cert-latest/cert_chain_rs4096_proving.key.gz")!
 private let userSigProvingKeyURL = URL(
   string:
-    "https://github.com/zkmopro/zkID/releases/download/latest/user_sig_rs2048_proving.key.gz")!
+    "https://github.com/privacy-ethereum/zkID/releases/download/RSA-X.509-Cert-latest/user_sig_rs2048_proving.key.gz")!
 private let smtSnapshotURL = URL(
   string:
-    "https://github.com/moven0831/moica-revocation-smt/releases/download/snapshot-latest/g3-tree-snapshot.json.gz"
+    "https://github.com/privacy-ethereum/moica-revocation-smt/releases/download/snapshot-latest/g3-tree-snapshot.json.gz"
 )!
 private let serverURL = URL(string: "https://a5b6-3-85-109-129.ngrok-free.app/challenge")!
 private let linkVerifyURL = URL(string: "https://a5b6-3-85-109-129.ngrok-free.app/link-verify")!

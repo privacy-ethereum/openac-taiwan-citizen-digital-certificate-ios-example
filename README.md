@@ -1,6 +1,6 @@
 # OpenAC Example App
 
-Sample iOS app that runs the **OpenAC** zero-knowledge pipeline for Taiwan's MOICA digital identity: authenticate with the MOICA app, generate ZK proofs for the cert chain (RS4096) and user signature (RS2048) circuits, then submit them to a server for link verification. It uses **[OpenACSwift](https://github.com/zkmopro/OpenACSwift)**—Swift bindings for OpenAC on iOS.
+Sample iOS app that runs the **OpenAC** zero-knowledge pipeline for Taiwan's MOICA digital identity: authenticate with the MOICA app, generate ZK proofs for the cert chain (RS4096) and user signature (RS2048) circuits, then submit them to a server for link verification. It uses **[OpenACSwift](https://github.com/privacy-ethereum/OpenACSwift)**—Swift bindings for OpenAC on iOS.
 
 ## Demo
 
@@ -63,7 +63,7 @@ Individual steps can be triggered with their own play button, or tap **Run All S
 
 ## Dependencies
 
-- [OpenACSwift](https://github.com/zkmopro/OpenACSwift) — Swift bindings for `proveCertChainRs4096`, `proveUserSigRs2048`, `verifyCertChainRs4096`, `verifyUserSigRs2048`, `generateCertChainRs4096Input`, `linkVerify`
+- [OpenACSwift](https://github.com/privacy-ethereum/OpenACSwift) — Swift bindings for `proveCertChainRs4096`, `proveUserSigRs2048`, `verifyCertChainRs4096`, `verifyUserSigRs2048`, `generateCertChainRs4096Input`, `linkVerify`
 - CryptoKit (system) — AES-256-GCM for the sp_checksum required by the TW FidO API
 - zlib (system) — decompresses `.gz` key files on-device
 
@@ -79,6 +79,6 @@ Individual steps can be triggered with their own play button, or tap **Run All S
 
 ## See also
 
-- [OpenACSwift](https://github.com/zkmopro/OpenACSwift) — API, installation, and prebuilt binaries
-- [zkID releases](https://github.com/zkmopro/zkID/releases) — circuit and key files
-- [moica-revocation-smt](https://github.com/moven0831/moica-revocation-smt) — SMT snapshot releases
+- [OpenACSwift](https://github.com/privacy-ethereum/OpenACSwift) — API, installation, and prebuilt binaries
+- [zkID releases](https://github.com/privacy-ethereum/zkID/releases/tag/RSA-X.509-Cert-latest) — circuit and key files
+- [moica-revocation-smt](https://github.com/privacy-ethereum/moica-revocation-smt) — SMT snapshot releases
