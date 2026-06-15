@@ -19,8 +19,8 @@ private let smtSnapshotURL = URL(
   string:
     "https://github.com/privacy-ethereum/moica-revocation-smt/releases/download/snapshot-latest/g3-tree-snapshot.json.gz"
 )!
-private let serverURL = URL(string: "https://a5b6-3-85-109-129.ngrok-free.app/challenge")!
-private let linkVerifyURL = URL(string: "https://a5b6-3-85-109-129.ngrok-free.app/link-verify")!
+private let serverURL = URL(string: "https://b33f-54-237-15-198.ngrok-free.app/challenge")!
+private let linkVerifyURL = URL(string: "https://b33f-54-237-15-198.ngrok-free.app/link-verify")!
 
 @Observable
 @MainActor

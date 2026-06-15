@@ -596,7 +596,7 @@
 		};
 		2A372AE02F8DE30E003BE776 /* XCRemoteSwiftPackageReference "OpenACSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/zkmopro/OpenACSwift";
+			repositoryURL = "https://github.com/privacy-ethereum/OpenACSwift";
 			requirement = {
 				branch = main;
 				kind = branch;

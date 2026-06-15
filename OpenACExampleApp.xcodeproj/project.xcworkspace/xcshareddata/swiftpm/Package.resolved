@@ -4,7 +4,7 @@
     {
       "identity" : "openacswift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/zkmopro/OpenACSwift",
+      "location" : "https://github.com/privacy-ethereum/OpenACSwift",
       "state" : {
         "branch" : "main",
         "revision" : "2c1e262fb0c445ac5b865c8adc4b9a763b42584c"
