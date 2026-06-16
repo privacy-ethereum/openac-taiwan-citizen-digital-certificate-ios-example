@@ -1,13 +1,13 @@
 {
-  "originHash" : "70e522a2a17894d0b29cd5fe3e28c57d1952ecc54b7dd60df65f7e328384ef2f",
+  "originHash" : "b8afe3385189985bc488f18d13e47c057f13aeaa7951f1fdbd15d67944556b75",
   "pins" : [
     {
-      "identity" : "openacswift",
+      "identity" : "openac-rsa-x509-swift",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/privacy-ethereum/OpenACSwift",
+      "location" : "https://github.com/privacy-ethereum/openac-rsa-x509-swift",
       "state" : {
         "branch" : "main",
-        "revision" : "2c1e262fb0c445ac5b865c8adc4b9a763b42584c"
+        "revision" : "78f5ce1349d04c6cece6369b52db7462b0b84eb5"
       }
     },
     {

@@ -206,7 +206,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				2A2E0EB12F868AE100CA4529 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
-				2A372AE02F8DE30E003BE776 /* XCRemoteSwiftPackageReference "OpenACSwift" */,
+				2A372AE02F8DE30E003BE776 /* XCRemoteSwiftPackageReference "openac-rsa-x509-swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2AE67C232F823BFE00250118 /* Products */;
@@ -594,9 +594,9 @@
 				minimumVersion = 0.9.20;
 			};
 		};
-		2A372AE02F8DE30E003BE776 /* XCRemoteSwiftPackageReference "OpenACSwift" */ = {
+		2A372AE02F8DE30E003BE776 /* XCRemoteSwiftPackageReference "openac-rsa-x509-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/privacy-ethereum/OpenACSwift";
+			repositoryURL = "https://github.com/privacy-ethereum/openac-rsa-x509-swift";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -612,7 +612,7 @@
 		};
 		2A372AE12F8DE30E003BE776 /* OpenACSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2A372AE02F8DE30E003BE776 /* XCRemoteSwiftPackageReference "OpenACSwift" */;
+			package = 2A372AE02F8DE30E003BE776 /* XCRemoteSwiftPackageReference "openac-rsa-x509-swift" */;
 			productName = OpenACSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
